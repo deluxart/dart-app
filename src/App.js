@@ -8,9 +8,9 @@ const isBrowserSupportsHistory = 'pushState' in window.history;
 
 function App() {
   return (
-      <Router history={history} forceRefresh={!isBrowserSupportsHistory}>
-        <Layout />
-      </Router>
+    <Router history={history} forceRefresh={!isBrowserSupportsHistory}>
+      <Layout />
+    </Router>
   );
 }
 

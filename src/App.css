@@ -7,7 +7,8 @@
   text-align: center;
 }
 
-.App-logo, .App-logoTwo {
+.App-logo,
+.App-logoTwo {
   height: 40vmin;
   pointer-events: none;
 }
