@@ -225,20 +225,20 @@ video {
   margin-left: auto;
   width: 100%;
 
-  @media (min-width: 576px) {
+  @media (min-width: $sm_bp) {
     max-width: 540px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $sp_bp) {
     max-width: 720px;
   }
-  @media (min-width: 992px) {
+  @media (min-width: $tb_bp) {
     max-width: 960px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $dt_bp) {
     max-width: 1140px;
   }
 
-  @media (min-width: 1330px) {
+  @media (min-width: $bdt_bp) {
     max-width: 1300px;
   }
 }

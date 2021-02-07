@@ -13,8 +13,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  & > div {
-    border-left: 1px solid #f9f9f9;
+  > div {
+    border-left: 1px solid $light_gray;
 
     &:first-child {
       border: 0;
