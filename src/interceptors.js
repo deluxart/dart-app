@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export const JWT_TOKEN = 'accessToken';
 
-const addHeader = (config) => {
-  return new Promise((resolve) => {
+const addHeader = config => {
+  return new Promise(resolve => {
     const jwtCookie = localStorage.getItem(JWT_TOKEN); // eslint-disable-line
     return jwtCookie?.length > 2
       ? resolve({
@@ -22,10 +22,10 @@ const useInterceptors = () => {
   axios.defaults.baseURL = process.env.REACT_APP_MAIN_API_URL || '';
 
   axios.interceptors.request.use(
-    (config) => {
-      return addHeader(config).catch((_) => _);
+    config => {
+      return addHeader(config).catch(_ => _);
     },
-    (error) => {
+    error => {
       // Do something with request error
       return Promise.reject(error);
     }

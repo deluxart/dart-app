@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?58704299');
+  src: url('../font/fontello.eot?58704299#iefix') format('embedded-opentype'), url('../font/fontello.woff2?58704299') format('woff2'),
+    url('../font/fontello.woff?58704299') format('woff'), url('../font/fontello.ttf?58704299') format('truetype'),
+    url('../font/fontello.svg?58704299#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'fontello', serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: '\e800';
+}
+.icon-user:before {
+  content: '\e801';
+}
+.icon-th:before {
+  content: '\e802';
+}
+.icon-th-list:before {
+  content: '\e803';
+}
+.icon-ok:before {
+  content: '\e804';
+}
+.icon-down-open:before {
+  content: '\e805';
+}
+.icon-left-open:before {
+  content: '\e806';
+}
+.icon-right-open:before {
+  content: '\e807';
+}
+.icon-up-open:before {
+  content: '\e808';
+}
+.icon-down-big:before {
+  content: '\e809';
+}
+.icon-left-big:before {
+  content: '\e80a';
+}
+.icon-right-big:before {
+  content: '\e80b';
+}
+.icon-up-big:before {
+  content: '\e80c';
+}
+.icon-pencil:before {
+  content: '\e80d';
+}
+.icon-tags:before {
+  content: '\e80e';
+}
+.icon-attach:before {
+  content: '\e80f';
+}
+.icon-folder-open:before {
+  content: '\e810';
+}
+.icon-phone:before {
+  content: '\e811';
+}
+.icon-hash:before {
+  content: '\e812';
+}
+.icon-at:before {
+  content: '\e813';
+}
+.icon-twitter:before {
+  content: '\f099';
+}
+.icon-facebook:before {
+  content: '\f09a';
+}
+.icon-mail-alt:before {
+  content: '\f0e0';
+}
+.icon-linkedin:before {
+  content: '\f0e1';
+}
+.icon-doc-text:before {
+  content: '\f0f6';
+}
+.icon-angle-left:before {
+  content: '\f104';
+}
+.icon-angle-right:before {
+  content: '\f105';
+}
+.icon-angle-up:before {
+  content: '\f106';
+}
+.icon-angle-down:before {
+  content: '\f107';
+}
+.icon-folder-open-empty:before {
+  content: '\f115';
+}
+.icon-code:before {
+  content: '\f121';
+}
+.icon-instagram:before {
+  content: '\f16d';
+}
+.icon-google:before {
+  content: '\f1a0';
+}
+.icon-behance:before {
+  content: '\f1b4';
+}
+.icon-telegram:before {
+  content: '\f1d8';
+}
+.icon-telegram-empty:before {
+  content: '\f1d9';
+}

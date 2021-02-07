@@ -20,6 +20,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "history": "^5.0.0",
+    "lint-staged": "^10.5.4",
     "node-sass": "4.14.1",
     "nopy": "^0.2.7",
     "pre-commit": "^1.2.2",
@@ -33,10 +34,21 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "nopenv pre-commit run --files"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "nopenv pre-commit run -a"
+    "lint": "nopenv pre-commit run -a",
+    "install": "npip install",
+    "nopy": "nopy",
+    "npip": "npip"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,9 +70,10 @@
     "pretty-quick": "^3.1.0",
     "react-redux": "^7.2.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
+  "python": {
+    "execPath": "python3",
+    "dependencies": {
+      "pre-commit": ">=2.5"
     }
   }
 }
