@@ -1,0 +1,23 @@
+.bg_lines {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -2;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media (max-width: $sp_bp) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & > div {
+    border-left: 1px solid #f9f9f9;
+
+    &:first-child {
+      border: 0;
+    }
+  }
+}

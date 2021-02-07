@@ -9,6 +9,8 @@ import ContactsPage from '../pages/contacts';
 import ErrorPage from '../pages/404';
 import '../look/styles/_resources.scss';
 
+import styles from './layout.module.scss';
+
 const Layout = () => {
   return (
     <div className="App">
@@ -31,6 +33,14 @@ const Layout = () => {
         />
         <Route component={ErrorPage} />
       </Switch>
+      <div className={styles.bg_lines}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

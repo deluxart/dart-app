@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import cx from 'classnames';
 import logo from '../images/logo.svg';
 
 import styles from './header.module.scss';
 
 const Header = () => {
+  const [aciveNav, setActiveNav] = useState(false);
+
+  const navIconToggle = () => {
+    setActiveNav(!aciveNav);
+  };
+
   return (
     <header className={styles.header}>
       <div className="container">
@@ -38,6 +45,12 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
+          </div>
+          <div className={cx(styles.nav_icon, aciveNav && styles.nav_icon_active)} onClick={navIconToggle}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
