@@ -10,6 +10,7 @@
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "classnames": "^2.2.6",
+    "craco-alias": "^2.1.1",
     "craco-sass-resources-loader": "^1.1.0",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",

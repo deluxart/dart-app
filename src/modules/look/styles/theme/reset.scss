@@ -101,7 +101,6 @@ video {
 h1 {
   font-weight: bold;
   font-size: 64px;
-  //line-height: 80px;
   text-transform: uppercase;
 }
 
@@ -161,6 +160,12 @@ h5 {
     font-size: 18px;
     line-height: 30px;
   }
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 .mobile {

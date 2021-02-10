@@ -6,10 +6,10 @@ import logo from '../images/logo.svg';
 import styles from './header.module.scss';
 
 const Header = () => {
-  const [aciveNav, setActiveNav] = useState(false);
+  const [activeNav, setActiveNav] = useState(false);
 
   const navIconToggle = () => {
-    setActiveNav(!aciveNav);
+    setActiveNav(!activeNav);
   };
 
   return (
@@ -40,13 +40,12 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to={'/contacts'} activeClassName={styles.header__nav_active}>
-                  <i className="icon-ok" />
                   Contacts
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className={cx(styles.nav_icon, aciveNav && styles.nav_icon_active)} onClick={navIconToggle}>
+          <div className={cx(styles.nav_icon, activeNav && styles.nav_icon_active)} onClick={navIconToggle}>
             <span></span>
             <span></span>
             <span></span>
